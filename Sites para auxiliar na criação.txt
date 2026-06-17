@@ -1,0 +1,18 @@
+Imagens
+
+https://craftpix.net/?srsltid=AfmBOopwhfp6aPYU0LoszrXujTFgf28b1XRpNQQjFt036HBzjX_8GIIq
+https://opengameart.org/
+
+Sons
+
+https://www.google.com/search?q=freesound&rlz=1C1CHMZ_pt-brBR1197BR1197&oq=freesound&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDI1NTBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8
+
+Site oficial do pygame
+
+https://www.pygame.org/news
+
+Site para entender os eventos do pycharm
+
+?
+
+Site para pegar o conteudo do .gitignore
