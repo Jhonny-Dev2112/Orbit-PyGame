@@ -19,6 +19,19 @@ ENTITY_SPEED = {
     'Enemy4': 4,
 }
 
+ENTITY_HEALTH = {
+    'Level1Bg0': 999,
+    'Level1Bg1': 999,
+    'Level1Bg2': 999,
+    'Player1': 300,
+    'Player1Shot': 1,
+    'Player2': 300,
+    'Player2Shot': 1,
+    'Enemy1': 50,
+    'EnemyShot': 1,
+    'Enemy2': 60,
+    'Enemy2Shot': 1
+}
 
 # M
 MENU_OPTION = ('New Game',
