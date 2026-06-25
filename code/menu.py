@@ -8,7 +8,7 @@ from code.Const import WIN_WIDTH, MENU_OPTION, COLOR_WHITE, COLOR_YELLOW, COLOR_
 class Menu:
     def __init__(self, window):
         self.window = window
-        self.surf = pygame.image.load("./asset/backgroundMenu.png")
+        self.surf = pygame.image.load("./asset/backgroundMenu.png").convert_alpha()
         self.rect = self.surf.get_rect(left=0, top=0)
 
     def run(self, ):
@@ -26,9 +26,9 @@ class Menu:
                     text_size = 70
 
                 if i == menu_option:
-                    self.menu_text(text_size, MENU_OPTION[i], COLOR_BLUE_DARK, ((WIN_WIDTH / 2), 290 + 65 * i), True)
+                    self.menu_text(text_size, MENU_OPTION[i], COLOR_BLUE_DARK, ((WIN_WIDTH / 2), 310 + 62 * i), True)
                 else:
-                    self.menu_text(text_size, MENU_OPTION[i], COLOR_WHITE, ((WIN_WIDTH / 2), 290 + 65 * i))
+                    self.menu_text(text_size, MENU_OPTION[i], COLOR_WHITE, ((WIN_WIDTH / 2), 310 + 62 * i))
 
             pygame.display.flip()
 
