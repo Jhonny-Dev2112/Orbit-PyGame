@@ -15,20 +15,31 @@ class Menu:
         menu_option = 0
         pygame.mixer_music.load('asset/musicMenu.mp3')
         pygame.mixer_music.play(-1)
+
         while True:
             # DRAW IMAGES
             self.window.blit(source=self.surf, dest=self.rect)
 
+            y_pos = 310
+
             for i in range(len(MENU_OPTION)):
-                text_size = 50
+                text_size = 40
+                spacing = 60
 
                 if MENU_OPTION[i] == "New Game":
-                    text_size = 70
+                    text_size = 60
+                    spacing = 70
+
+                if MENU_OPTION[i] == "SCORE" or MENU_OPTION[i] == "EXIT":
+                    text_size = 30
+                    spacing = 50
 
                 if i == menu_option:
-                    self.menu_text(text_size, MENU_OPTION[i], COLOR_BLUE_DARK, ((WIN_WIDTH / 2), 310 + 62 * i), True)
+                    self.menu_text(text_size, MENU_OPTION[i], COLOR_BLUE_DARK, ((WIN_WIDTH / 2), y_pos), True)
                 else:
-                    self.menu_text(text_size, MENU_OPTION[i], COLOR_WHITE, ((WIN_WIDTH / 2), 310 + 62 * i))
+                    self.menu_text(text_size, MENU_OPTION[i], COLOR_WHITE, ((WIN_WIDTH / 2), y_pos))
+
+                y_pos += spacing
 
             pygame.display.flip()
 
@@ -52,10 +63,10 @@ class Menu:
                         return MENU_OPTION[menu_option]
 
     def menu_text(self, text_size: int, text: str, text_color: tuple, text_center_pos: tuple, selected: bool = False):
-        text_font: Font = pygame.font.SysFont(name="agencyfb", size=text_size)
+        text_font: Font = pygame.font.SysFont(name="georgia", size=text_size)
 
         if selected:
-            outline_size = 2
+            outline_size = 1
 
             outline_surf: Surface = text_font.render(text, True, COLOR_WHITE).convert_alpha()
 
