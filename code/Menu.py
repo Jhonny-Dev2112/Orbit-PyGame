@@ -2,7 +2,7 @@ import pygame
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from code.Const import WIN_WIDTH, MENU_OPTION, COLOR_WHITE, COLOR_YELLOW, COLOR_BLUE_DARK
+from code.Const import WIN_WIDTH, MENU_OPTION, C_WHITE, C_YELLOW, C_BLUE_DARK
 
 
 class Menu:
@@ -35,9 +35,9 @@ class Menu:
                     spacing = 50
 
                 if i == menu_option:
-                    self.menu_text(text_size, MENU_OPTION[i], COLOR_BLUE_DARK, ((WIN_WIDTH / 2), y_pos), True)
+                    self.menu_text(text_size, MENU_OPTION[i], C_BLUE_DARK, ((WIN_WIDTH / 2), y_pos), True)
                 else:
-                    self.menu_text(text_size, MENU_OPTION[i], COLOR_WHITE, ((WIN_WIDTH / 2), y_pos))
+                    self.menu_text(text_size, MENU_OPTION[i], C_WHITE, ((WIN_WIDTH / 2), y_pos))
 
                 y_pos += spacing
 
@@ -68,7 +68,7 @@ class Menu:
         if selected:
             outline_size = 1
 
-            outline_surf: Surface = text_font.render(text, True, COLOR_WHITE).convert_alpha()
+            outline_surf: Surface = text_font.render(text, True, C_WHITE).convert_alpha()
 
             for dx in range(-outline_size, outline_size + 1):
                 for dy in range(-outline_size, outline_size + 1):
