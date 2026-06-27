@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import pygame
 
-from code.Const import WIN_WIDTH, WIN_HEIGHT, MENU_OPTION
+from code.Const import WIN_WIDTH, WIN_HEIGHT, MENU_OPTION, LEVELS
 from code.Level import Level
 from code.Menu import Menu
 
@@ -18,12 +18,14 @@ class Game:
             menu_return = menu.run()
 
             if menu_return in [MENU_OPTION[0], MENU_OPTION[1], MENU_OPTION[2]]:
-                player_score = [0, 0] # [Player1, Player 2]
-                level = Level(self.window, 'Level1', menu_return, player_score)
-                level_return = level.run(player_score)
-                if level_return:
-                    level = Level(self.window, 'Level2', menu_return, player_score)
+                player_score = [0, 0]  # [Player1, Player2]
+
+                for level_name in LEVELS:
+                    level = Level(self.window, level_name, menu_return, player_score)
                     level_return = level.run(player_score)
+
+                    if not level_return:
+                        break
 
             elif menu_return == MENU_OPTION[4]:
                 pygame.quit()  # Close Window

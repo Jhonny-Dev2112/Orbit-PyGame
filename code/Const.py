@@ -16,6 +16,12 @@ ENTITY_SPEED = {
     'Level2Bg0': 0,
     'Level2Bg1': 1,
     'Level2Bg2': 5,
+    'Level3Bg0': 0,
+    'Level3Bg1': 1,
+    'Level3Bg2': 5,
+    'Level4Bg0': 0,
+    'Level4Bg1': 1,
+    'Level4Bg2': 5,
     'Player1' : 5,
     'Player1Shot': 5,
     'Player2' : 5,
@@ -25,7 +31,7 @@ ENTITY_SPEED = {
     'Enemy2': 1,
     'Enemy2Shot': 3,
     'Enemy3': 4,
-    'Enemy4': 4,
+    'Enemy4': 4
 }
 
 ENTITY_HEALTH = {
@@ -35,6 +41,12 @@ ENTITY_HEALTH = {
     'Level2Bg0': 999,
     'Level2Bg1': 999,
     'Level2Bg2': 999,
+    'Level3Bg0': 999,
+    'Level3Bg1': 999,
+    'Level3Bg2': 999,
+    'Level4Bg0': 999,
+    'Level4Bg1': 999,
+    'Level4Bg2': 999,
     'Player1': 300,
     'Player1Shot': 1,
     'Player2': 300,
@@ -52,6 +64,12 @@ ENTITY_DAMAGE = {
     'Level2Bg0': 0,
     'Level2Bg1': 0,
     'Level2Bg2': 0,
+    'Level3Bg0': 0,
+    'Level3Bg1': 0,
+    'Level3Bg2': 0,
+    'Level4Bg0': 0,
+    'Level4Bg1': 0,
+    'Level4Bg2': 0,
     'Player1': 1,
     'Player1Shot': 25,
     'Player2': 1,
@@ -69,6 +87,12 @@ ENTITY_SCORE = {
     'Level2Bg0': 0,
     'Level2Bg1': 0,
     'Level2Bg2': 0,
+    'Level3Bg0': 0,
+    'Level3Bg1': 0,
+    'Level3Bg2': 0,
+    'Level4Bg0': 0,
+    'Level4Bg1': 0,
+    'Level4Bg2': 0,
     'Player1': 0,
     'Player1Shot': 0,
     'Player2': 0,
@@ -86,12 +110,17 @@ ENTITY_SHOT_DELAY = {
     'Enemy2' : 250,
 }
 
+# L
+LEVELS = ('Level1', 'Level2', 'Level3', 'Level4')
+
 # M
 MENU_OPTION = ('New Game',
                'New Game 2P - COOPERATIVE',
                'New Game 2P - COMPETITIVE',
                'SCORE',
                'EXIT')
+
+
 
 # P
 PLAYER_KEY_UP = {'Player1': pygame.K_UP,
