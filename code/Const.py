@@ -8,11 +8,14 @@ C_BLUE_DARK = (2, 0, 101)
 
 # E
 EVENT_ENEMY = pygame.USEREVENT + 1
-
+EVENT_TIMEOUT = pygame.USEREVENT + 2
 ENTITY_SPEED = {
     'Level1Bg0': 0,
     'Level1Bg1': 1,
     'Level1Bg2': 5,
+    'Level2Bg0': 0,
+    'Level2Bg1': 1,
+    'Level2Bg2': 5,
     'Player1' : 5,
     'Player1Shot': 5,
     'Player2' : 5,
@@ -29,6 +32,9 @@ ENTITY_HEALTH = {
     'Level1Bg0': 999,
     'Level1Bg1': 999,
     'Level1Bg2': 999,
+    'Level2Bg0': 999,
+    'Level2Bg1': 999,
+    'Level2Bg2': 999,
     'Player1': 300,
     'Player1Shot': 1,
     'Player2': 300,
@@ -104,7 +110,11 @@ PLAYER_KEY_SHOOT = {'Player1': pygame.K_RCTRL,
                     'Player2': pygame.K_LCTRL}
 
 # S
-SPAWN_TIME = 4000
+SPAWN_TIME = 1000
+
+# T
+TIMEOUT_STEP = 100
+TIMEOUT_LEVEL = 20000
 
 # W
 WIN_WIDTH = 800
