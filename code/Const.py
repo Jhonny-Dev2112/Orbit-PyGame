@@ -143,9 +143,28 @@ SPAWN_TIME = 1000
 
 # T
 TIMEOUT_STEP = 100
-TIMEOUT_LEVEL = 20000
+TIMEOUT_LEVEL = 5000
 
 # W
 WIN_WIDTH = 800
 WIN_HEIGHT = 600
+
+#S
+
+SCORE_POS = {
+    'Title': (WIN_WIDTH / 2,  100),
+    'EnterName': (WIN_WIDTH / 2, 300),
+    'Label': (WIN_WIDTH / 2 - 80, 150),
+    'Name': (WIN_WIDTH / 2, 350),
+    0: (WIN_WIDTH / 2, 200),
+    1: (WIN_WIDTH / 2, 240),
+    2: (WIN_WIDTH / 2, 280),
+    3: (WIN_WIDTH / 2, 320),
+    4: (WIN_WIDTH / 2, 600),
+    5: (WIN_WIDTH / 2, 700),
+    6: (WIN_WIDTH / 2, 230),
+    7: (WIN_WIDTH / 2, 250),
+    8: (WIN_WIDTH / 2, 270),
+    9: (WIN_WIDTH / 2, 290),
+}
 
