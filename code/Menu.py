@@ -26,11 +26,11 @@ class Menu:
                 text_size = 40
                 spacing = 60
 
-                if MENU_OPTION[i] == "New Game":
+                if MENU_OPTION[i] == "Novo Jogo":
                     text_size = 60
                     spacing = 70
 
-                if MENU_OPTION[i] == "SCORE" or MENU_OPTION[i] == "EXIT":
+                if MENU_OPTION[i] == "SCORE" or MENU_OPTION[i] == "SAIR":
                     text_size = 30
                     spacing = 50
 

@@ -27,8 +27,17 @@ class Player(Entity):
 
     def shoot(self):
         self.shot_delay -= 1
+
         if self.shot_delay == 0:
             self.shot_delay = ENTITY_SHOT_DELAY[self.name]
             pressed_key = pygame.key.get_pressed()
+
             if pressed_key[PLAYER_KEY_SHOOT[self.name]]:
-                return PlayerShot(name=f'{self.name}Shot', position=(self.rect.centerx + 40, self.rect.centery - 2 ))
+                shot_sound = pygame.mixer.Sound('./asset/ShotPlayers.mp3')
+                shot_sound.set_volume(0.2)
+                shot_sound.play()
+
+                return PlayerShot(
+                    name=f'{self.name}Shot',
+                    position=(self.rect.centerx + 40, self.rect.centery - 2)
+                )

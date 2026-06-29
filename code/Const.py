@@ -1,10 +1,9 @@
-# C
 import pygame
 
+# C
 C_WHITE = (255, 255, 255)
 C_YELLOW = (255, 255, 0)
 C_BLUE_DARK = (2, 0, 101)
-
 
 # E
 EVENT_ENEMY = pygame.USEREVENT + 1
@@ -22,16 +21,20 @@ ENTITY_SPEED = {
     'Level4Bg0': 0,
     'Level4Bg1': 1,
     'Level4Bg2': 5,
-    'Player1' : 5,
-    'Player1Shot': 5,
-    'Player2' : 5,
-    'Player2Shot': 5,
-    'Enemy1': 2,
-    'Enemy1Shot': 4,
+
+    'Player1': 5,
+    'Player1Shot': 8,
+    'Player2': 5,
+    'Player2Shot': 8,
+
+    'Enemy1': 1,
+    'Enemy1Shot': 3,
     'Enemy2': 1,
-    'Enemy2Shot': 3,
-    'Enemy3': 4,
-    'Enemy4': 4
+    'Enemy2Shot': 4,
+    'Enemy3': 2,
+    'Enemy3Shot': 5,
+    'Enemy4': 2,
+    'Enemy4Shot': 6,
 }
 
 ENTITY_HEALTH = {
@@ -47,14 +50,20 @@ ENTITY_HEALTH = {
     'Level4Bg0': 999,
     'Level4Bg1': 999,
     'Level4Bg2': 999,
+
     'Player1': 300,
     'Player1Shot': 1,
     'Player2': 300,
     'Player2Shot': 1,
-    'Enemy1': 50,
-    'Enemy1Shot': 5,
-    'Enemy2': 70,
-    'Enemy2Shot': 2
+
+    'Enemy1': 25,
+    'Enemy1Shot': 1,
+    'Enemy2': 35,
+    'Enemy2Shot': 1,
+    'Enemy3': 45,
+    'Enemy3Shot': 1,
+    'Enemy4': 55,
+    'Enemy4Shot': 1,
 }
 
 ENTITY_DAMAGE = {
@@ -70,14 +79,20 @@ ENTITY_DAMAGE = {
     'Level4Bg0': 0,
     'Level4Bg1': 0,
     'Level4Bg2': 0,
+
     'Player1': 1,
     'Player1Shot': 25,
     'Player2': 1,
     'Player2Shot': 25,
+
     'Enemy1': 1,
-    'Enemy1Shot': 20,
+    'Enemy1Shot': 10,
     'Enemy2': 1,
-    'Enemy2Shot': 15,
+    'Enemy2Shot': 12,
+    'Enemy3': 1,
+    'Enemy3Shot': 15,
+    'Enemy4': 1,
+    'Enemy4Shot': 18,
 }
 
 ENTITY_SCORE = {
@@ -93,34 +108,40 @@ ENTITY_SCORE = {
     'Level4Bg0': 0,
     'Level4Bg1': 0,
     'Level4Bg2': 0,
+
     'Player1': 0,
     'Player1Shot': 0,
     'Player2': 0,
     'Player2Shot': 0,
+
     'Enemy1': 100,
     'Enemy1Shot': 0,
     'Enemy2': 125,
     'Enemy2Shot': 0,
+    'Enemy3': 150,
+    'Enemy3Shot': 0,
+    'Enemy4': 200,
+    'Enemy4Shot': 0,
 }
 
 ENTITY_SHOT_DELAY = {
-    'Player1' : 20,
-    'Player2' : 20,
-    'Enemy1' : 100,
-    'Enemy2' : 250,
+    'Player1': 18,
+    'Player2': 18,
+    'Enemy1': 140,
+    'Enemy2': 120,
+    'Enemy3': 100,
+    'Enemy4': 80,
 }
 
 # L
 LEVELS = ('Level1', 'Level2', 'Level3', 'Level4')
 
 # M
-MENU_OPTION = ('New Game',
-               'New Game 2P - COOPERATIVE',
-               'New Game 2P - COMPETITIVE',
+MENU_OPTION = ('Novo Jogo',
+               'Novo Jogo - 2 Jogadores - Cooperativo',
+               'Novo Jogo - 2 Jogadores - Competitivo',
                'SCORE',
-               'EXIT')
-
-
+               'SAIR')
 
 # P
 PLAYER_KEY_UP = {'Player1': pygame.K_UP,
@@ -143,28 +164,19 @@ SPAWN_TIME = 1000
 
 # T
 TIMEOUT_STEP = 100
-TIMEOUT_LEVEL = 5000
+TIMEOUT_LEVEL = 3000
 
 # W
 WIN_WIDTH = 800
 WIN_HEIGHT = 600
 
-#S
+# S
 
 SCORE_POS = {
-    'Title': (WIN_WIDTH / 2,  100),
-    'EnterName': (WIN_WIDTH / 2, 300),
+    'Top10': (WIN_WIDTH / 2, 100),
+    'Title': (WIN_WIDTH / 2, 130),
+    'SubTitle': (WIN_WIDTH / 2, 200),
+    'EnterName': (WIN_WIDTH / 2, 350),
     'Label': (WIN_WIDTH / 2 - 80, 150),
-    'Name': (WIN_WIDTH / 2, 350),
-    0: (WIN_WIDTH / 2, 200),
-    1: (WIN_WIDTH / 2, 240),
-    2: (WIN_WIDTH / 2, 280),
-    3: (WIN_WIDTH / 2, 320),
-    4: (WIN_WIDTH / 2, 600),
-    5: (WIN_WIDTH / 2, 700),
-    6: (WIN_WIDTH / 2, 230),
-    7: (WIN_WIDTH / 2, 250),
-    8: (WIN_WIDTH / 2, 270),
-    9: (WIN_WIDTH / 2, 290),
+    'Name': (WIN_WIDTH / 2, 350)
 }
-
