@@ -51,7 +51,7 @@ class Level:
                     if shoot is not None:
                         self.entity_list.append(shoot)
                 if ent.name == 'Player1':
-                    self.level_text(30, f'Jogador - Vida: {ent.health} | Score:{ent.score}', C_WHITE, (10, 30))
+                    self.level_text(30, f'Jogador 1 - Vida: {ent.health} | Score:{ent.score}', C_WHITE, (10, 30))
                 if ent.name == 'Player2':
                     self.level_text(30, f'Jogador 2 - Vida: {ent.health} | Score:{ent.score}', C_WHITE, (10, 60))
             for event in pygame.event.get():

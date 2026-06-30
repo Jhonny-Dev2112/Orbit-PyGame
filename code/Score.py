@@ -42,11 +42,11 @@ class Score:
             if game_mode == MENU_OPTION[2]:
                 if player_score[0] > player_score[1]:
                     score = player_score[0]
-                    winner_text = 'PLAYER 1 VENCEU!'
+                    winner_text = 'JOGADOR 1 VENCEU!'
                     text = 'QUAL O NOME DO PLAYER 1?'
                 elif player_score[1] > player_score[0]:
                     score = player_score[1]
-                    winner_text = 'PLAYER 2 VENCEU!'
+                    winner_text = 'JOGADOR 2 VENCEU!'
                     text = 'QUAL O NOME DO PLAYER 2?'
                 else:
                     score = player_score[0]
