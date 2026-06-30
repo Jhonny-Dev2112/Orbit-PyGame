@@ -1,6 +1,12 @@
 from cx_Freeze import setup, Executable
 
-executables = [Executable("main.py")]
+executables = [
+    Executable(
+        script="main.py",
+        target_name="Orbit Shooter.exe",
+        icon="OrbitIcon.ico"
+    )
+]
 
 setup(
     name="MountainShooter",
