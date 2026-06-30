@@ -1,4 +1,4 @@
-# 🚀 Orbit Shooter
+# 🚀 Orbit Shooter 🚀
 
 <p align="center">
   <img src="asset/backgroundMenu.png" alt="Orbit Shooter menu background" width="720">
